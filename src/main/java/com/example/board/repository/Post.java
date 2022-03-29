@@ -2,13 +2,12 @@ package com.example.board.repository;
 
 import java.util.Date;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import lombok.Data;
-
 /**
  * 投稿.
  */
@@ -42,5 +41,6 @@ public class Post {
 
     /** 削除済 */
     private boolean deleted = false;
+
 
 }
