@@ -1,3 +1,4 @@
+
 <form method="POST" action="#" th:action="@{${path}}" th:object="${form}">
   <input type="hidden" th:field="*{id}" />
   <section id="form">
@@ -20,7 +21,7 @@
 </form>
 <section id="posts">
   <ul>
-    <li th:each="post : ${list}">
+    <li th:each="post : ${list}" th:unless="${post.deleted}">
       <article class="post">
         <ul>
           <li>
